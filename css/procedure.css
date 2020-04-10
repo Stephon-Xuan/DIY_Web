@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-03-24 21:12:15
+ * @version $Id$
+ */
+body{
+	/*position:relative;*/
+	width:1366px;
+	height:100%;
+	background:url(../imgs/index/bg05.png)left top no-repeat;
+	background-size:120% 120%;
+	/* background-color:#2d2828; */
+} 
+/*左栏*/
+div.leftNav{
+	width:200px;
+	/* background-color:#2470dc; */
+	height:608px;
+	color:#fff;
+	height:608px;
+	margin-left:20px;
+}
+
+div.leftNav h2{
+	text-align:center;
+	line-height:100px;
+	margin-top:20px;
+}
+div.leftNav img{
+	width:150px;
+	height:150px;
+	margin-left:25px;
+}
+div.leftNav div.prepare{
+	margin-top:20px;
+	margin-left:15px;
+}
+div.leftNav div.prepare h4{
+	text-align: center;
+	font-size: 16px;
+}
+div.leftNav div.prepare span{
+	line-height:10px;
+}
+/*右栏*/
+div.rightNav{
+	height:608px;
+	width:900px;
+	margin-left:80px;
+}/* 右边栏左滑动 */
+div.rightNav div.leftSlide{
+	width:50px;
+	height:608px;
+	float: left;
+}
+div.rightNav div.leftSlide div.lsBox{
+	width:50px;
+	height:608px;
+	/* padding:0 10px; */
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+div.rightNav div.leftSlide div.lsBox img{
+	width:50px;
+	height:50px;
+}
+/* 右栏右滑动 */
+div.rightNav div.rightSlide{
+	width:50px;
+	height: 50px;
+	float: left;
+}
+div.rightNav div.rightSlide div.rsBox{
+	width:50px;
+	height:608px;
+	/* padding:0 10px; */
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+div.rightNav div.rightSlide div.rsBox img{
+	width:50px;
+	height:50px;
+}
+
+/* div.rightNav img#left{
+	width:50px;
+	height: 50px;
+	margin-top:30%;
+	float:left;
+} */
+/* 步骤展示 */
+div.rightNav div.show{
+	width:800px;
+	height:608;
+	display:inline;
+	float: left;;
+}
+div.rightNav div.show img#stepImg{
+	width:600px;
+	height:400px;
+	margin-top:50px;
+	margin-left:100px;
+	margin-bottom:50px;
+}
+div.rightNav div.show div.step{
+	text-align: center;
+	margin-bottom:-500px;
+	font-size:20px;
+	color:#fff;
+}
+/* div.rightNav img#right{
+	width:50px;
+	height: 50px;
+	margin-top:30%;
+	float:right;
+} */
+.material{
+	text-align: center;
+	font-size:15px;	
+	line-height:25px;
+
+}

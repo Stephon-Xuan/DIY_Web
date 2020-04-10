@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-03-23 15:09:51
+ * @version $Id$
+ */
+/*总宽度1366，实际宽度1348，总高度608*/
+html{
+	cursor:pointer;
+}
+body{
+	/*position:relative;*/
+	/* width:1366px; */
+	width:1366px;
+	height:100%;
+	background:url(../imgs/index/bg.jpg)0 0 no-repeat;
+	background-size:180% 120%;
+	padding:20px 0;
+	/* overflow-y:hidden; */
+}
+/* div.whole{
+	width:1366px;
+	height:100%;
+	z-index:999;
+} */
+/* 左栏 */
+div.leftNav{
+	width:210px;
+	/*background-color:#2470dc;*/
+	height:608px;
+	/* color:#fff; */
+	color:#ccc;
+	height:608px;
+	border-right:2px #ccc solid;
+	padding:0 5px;
+}
+div.leftNav img{
+	width:40px;
+	height:40px;
+	margin:10px 0px 10px 75px;
+}
+div.leftNav div#sort{
+	height:250px;
+	margin-bottom:50px;
+}
+div.leftNav div#sort ul{
+	content:"";
+	display:block;
+	clear:both;
+	zoom:1;
+}
+div.leftNav div#sort ul h3{
+	height:30px;
+	text-align:center;
+	font-size:18px;
+	line-height:30px;
+	margin-top:10px;
+}
+div.leftNav div#sort ul h3:hover{
+	color:#FFF;
+	text-decoration:underline;
+}
+div.leftNav div#sort ul li{
+	color:#CCC;
+	text-align:center;
+	float:left;
+	margin:5px 0px;
+	display:none;
+	font-size:15px;
+	margin-left:15px;
+}
+div.leftNav div#sort ul li:hover{
+	color:#FFF;
+	text-decoration:underline;
+}
+/*div.leftNav div#pr{
+	margin-top:20px;
+}*/
+div.leftNav div#pr{
+	height:200px;
+}
+div.leftNav div#pr h4{
+	height:30px;
+	text-align:center;
+	font-size:15px;
+	line-height:30px;
+}
+div.leftNav div#pr ul{
+	margin-top:50px;
+}
+div.leftNav div#pr ul li{
+	text-align:center;
+	width:200px;
+	float:left;
+	margin:auto;
+}
+/*右栏*/
+div.rightNav{
+	height:608px;
+	width:900px;
+	float:left;
+	padding:10px;
+	display:none;
+	margin-left:40px;
+}
+/* 右栏左滑动 */
+div.rightNav div.leftSlide{
+	width:50px;
+	height:608px;
+	float: left;
+}
+div.rightNav div.leftSlide div.lsBox{
+	width:50px;
+	height:608px;
+	/* padding:0 10px; */
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+div.rightNav div.leftSlide div.lsBox img{
+	width:45px;
+	height:45px;
+	z-index:999;
+}
+/* 右栏右滑动 */
+div.rightNav div.rightSlide{
+	width:50px;
+	height: 50px;
+	float: left;
+	/* overflow: hidden; */
+}
+div.rightNav div.rightSlide div.rsBox{
+	width:50px;
+	height:608px;
+	/* padding:0 10px; */
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+div.rightNav div.rightSlide div.rsBox img{
+	width:45px;
+	height:45px;
+	z-index:999;
+}
+/* 右栏中间展示区 */
+div.rightNav div.showBox{
+	width:800px;
+	height:608;
+	display:inline;
+	float: left;
+}
+div.rightNav div.showBox div.box0{
+	height:608px;
+	width:800px;
+	display:table-cell;
+	vertical-align:middle;
+}
+/* 导航标题 */
+div.rightNav div.showBox div.box0 div.navTitle{
+	color: #fff;
+	width:200px;
+	height:100px;
+	border-top:2px #FFF solid;
+	/* margin-left:-100px; */
+}
+div.rightNav div.showBox div.box0 div.navTitle div#navBox{
+	font-size:18px;
+	width:200px;
+	border-top:2px #FFF solid;
+	padding:20px 0 0 0;
+	/* display:none; */
+}
+/* div作品展示 */
+div.rightNav div.showBox div.box0 div#ulBox{
+	height:400px;
+	width:800px;
+	overflow: hidden;
+	/* position:absolute; */
+}
+div.rightNav div.showBox div.box0 div#ulBox ul{
+	height:400px;
+	width:700px;
+	float: left;
+	padding:0 50px;
+	/* position:absolute; */
+	overflow: hidden;
+	z-index:999;
+	
+	/* display:none; */
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li{
+	float:left;
+	height:180px;
+	width:330px;
+	margin:10px;
+	/* padding:10px; */
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.imgBox{
+	height:180px;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.imgBox img{
+	width:150px;
+	height:180px;
+	border-radius:3px;
+	display:block;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.imgBox div.iconBox{
+	width:150px;
+	height:40px;
+	line-height:40px;
+	/* text-align:center; */
+	/* background-color:#706d6dcf; */
+	color:#fff;
+	position:absolute;
+	/* z-index:999px; */
+	/* margin:auto; */
+	margin-top:-180px;
+	overflow:hidden;
+	
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.imgBox div.iconBox img{
+	width:20px;
+	height:20px;
+	/* margin:2px 5px; */
+	background-color: #CCc;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.imgBox div.title{
+	width:150px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#706d6dcf;
+	color:#fff;
+	position:absolute;
+	z-index:999px;
+	margin-top:-40px;
+	overflow:hidden;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.summary{
+	height:180px;
+	width:150px;
+	color:#fff;
+	font-size:15px;
+	display:block;
+	padding-left:10px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:3;
+	background-color: #314040;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.summary p{
+	height:120px;
+	line-height:18px;
+	padding:5px;
+	overflow: hidden;
+	/* overflow-y: auto; */
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.summary div.iconBox2{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	/* text-align:center; */
+	/* background-color:#706d6dcf; */
+	color:#fff;
+	position:absolute;
+	z-index:999px;
+	/* margin-top:-40px; */
+	margin-top:15px;
+	overflow:hidden;
+}
+div.rightNav div.showBox div.box0 div#ulBox ul li div.summary div.iconBox2 img{
+	width:25px;
+	height:25px;
+	margin-top:2.5px;
+	/* margin:2px 5px; */
+	/* background-color: #CCc; */
+}
+/* div.rightNav div.showBox div.box0 ul li div.summary {
+	line-height:150px;
+	float:left;
+	margin-left:-100px;
+} */
+/* div.rightNav div.showBox div.box0 ul li div.icon{
+	margin-top:100px;
+	margin-left:50px;
+}
+div.rightNav div.showBox div.box0 div.icon span{
+	color:#fff;
+	font-size:18px;
+	line-height:25px;
+} */
+/* div.rightNav div.showBox div.box0  ul li div.icon img{
+	width:25px;
+	height:25px;
+	float:left;
+	margin-left:5px;
+} */
+/* 当前页数 */
+div.rightNav div.showBox div.box0 div.count{
+	width:200px;
+	height:100px;
+	float:right;
+	text-align: center;
+	margin-right:10px;
+}
+div.rightNav div.showBox div.box0 div.count p{
+	color:#fff;
+	line-height:25px;
+	font-size:20px;
+	width:25px;
+	height:25px;
+	background-color:#5e5e72;
+	padding:5px;
+	border-radius:100%;
+	float:right;
+	margin-top:60px;
+}
